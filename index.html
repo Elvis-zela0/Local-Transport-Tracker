@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K-Tracker | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <h4 class="fw-bold mb-5 text-primary">🚌 K-TRACKER</h4>
+            <nav>
+                <a href="index.html" class="nav-link-custom active">Dashboard</a>
+                <a href="schedules.html" class="nav-link-custom">Schedules</a>
+                <a href="about.html" class="nav-link-custom">About Project</a>
+                <hr class="opacity-25 my-4">
+                <a href="login.html" class="nav-link-custom text-info">Officer Login</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="fw-bold">Kigali Transport Hub</h2>
+            <p class="text-muted">Live updates and official social feeds from RURA.</p>
+
+            <div class="glass-card mb-4">
+                <h5 class="fw-bold mb-3">Official RURA Tariffs</h5>
+                <table class="table small">
+                    <thead class="table-light">
+                        <tr><th>Category</th><th>Price</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Kigali Bus</td><td>420 RWF</td></tr>
+                        <tr><td>Inter-City</td><td>23 RWF/km</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="glass-card">
+                        <h6 class="fw-bold text-primary mb-3">Twitter Feed</h6>
+                        <div style="height: 70px; width: 400px;overflow-y: auto;">
+                            <a class="twitter-timeline" href="https://twitter.com/RURA_RWANDA">Tweets by RURA</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="glass-card">
+                        <h6 class="fw-bold mb-3" style="color: #1877F2;">Facebook Feed</h6>
+                        <div id="fb-container" style="height: 70px; width: 400px; overflow: hidden;">
+                            <div class="fb-page" 
+                                 data-href="https://www.facebook.com/RURARwanda/" 
+                                 data-tabs="timeline" 
+                                 data-small-header="true" 
+                                 data-adapt-container-width="true" 
+                                 data-hide-cover="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>Powered by Kwizera Dev Group</footer>
+        </main>
+    </div>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+</body>
+</html>
